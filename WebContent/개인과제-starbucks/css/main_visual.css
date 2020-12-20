@@ -1,0 +1,68 @@
+/**main_visual 전체 배경 설정*/
+.main_visual{
+    height: 646px;
+    background-image: url(../img/2020_xams2_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/**양옆 사이즈 조절 위한 박스*/
+.main_visual_inner{
+    box-sizing: border-box;
+    position:relative;
+    max-width:1080px;
+    height:100%;
+    margin:0 auto;
+    padding-top:70px;
+}
+
+/**시간차를 두고 나타나는 효과*/
+.slogan_set, .coffee_set{
+    visibility: hidden;
+}
+
+/**커피 메뉴 위치 지정*/
+.coffee_set{
+    /*position: relative;*/
+    width: 1080px;
+    height: 100%
+    margin : 0 auto;
+
+}
+
+.set_06 { position: absolute; bottom:17%; left:23%; width:21%; max-width:224px;}
+.set_03 {position: absolute; bottom:13%; left:32.1%; width:22%; max-width:232px;}
+.set_01 {position: absolute; bottom:22%; left:43%; width:26%; max-width:277px;}
+.set_04 {position: absolute; bottom:16%; left:55%; width:24%; max-width:249px;}
+.set_02 {position: absolute; bottom:29%; left:64%; width:22%; max-width:233px;}
+.set_07 {position: absolute; bottom:12%; left:73.8%; width:25%; max-width:252px;}
+.set_05 {position: absolute; bottom:17%; left:81.3%; width:25%; max-width:268px;}
+
+/**자세히 보기 버튼*/
+.btn_slogan a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: background-color .5s;
+}
+
+.btn_slogan a:hover{
+    background-color: #006e3f;
+}
+
+.btn_slogan{
+    box-sizing: border-box;
+    width: 125px;
+    height: 38px;
+    margin-left: 30%;
+    line-height: 34px;
+    text-align:center;
+    font-size:15px;
+    border:2px solid  #fff;
+    border-radius:3px;
+    z-index:5;
+    margin-top:40px;
+
+}
+.slogan_set {width:34%; max-width:363px;}

@@ -1,0 +1,114 @@
+/**사이트 전체 여백, 폰트 지정*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "nbg", "맑은고딕", "HelveticaNeue", "DroidSans", "Sans-serif", "Helvetica";
+    font-size: 13px;
+    background: transparent;
+    vertical-align: baseline;
+    list-style : none;
+}
+
+body {
+    width: auto;
+    font-size: 1em;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+hr {
+    display: none;
+}
+/**전체 헤더 영역*/
+
+.header{
+    background-color: #f6f5ef;
+}
+.parent{
+    width: 1100px;
+    margin : 0 auto;
+}
+/**로고 영역*/
+.child .logo{
+    height: 75px;
+    width: 75px;
+    z-index: 12px;
+}
+
+.child .logo a{
+    background : url(../img/logo.png);
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-indent: -100000px;
+}
+/**우측 상단 메뉴 영역*/
+.upper_menu{
+    position: absolute;
+    height: 20px;
+    top: 15px;
+    right: 10%;
+    width: 464px;
+}
+
+.upper_link{
+    display: block;
+    float: left;
+    margin-left: 10px;
+
+}
+/**우측 하단 메뉴 영역*/
+.down_menu{
+    height: 66px;
+    width: 1100px;
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    /**left 아직 잘 모르겠음. 나중에 수정 필요*/
+    display: block;
+    text-decoration: none;
+
+}
+/**float 처리*/
+.clearfix:after{
+    content: '';
+    display: block;
+    float: none;
+    clear : both;
+}
+
+.pull-left{
+    float: left;
+}
+/**마우스가 올라간 링크에 대해 색 변경*/
+.down_menu .down_link:hover{ background:#2C2A29; color:#669900;}
+
+.down_link{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    text-align: right;
+
+}
+/**서브메뉴 펼쳐져도 떠 있기 위한 position 처리*/
+.sub{
+    position: absolute;
+    z-index: 1000;
+}
+
+/**서브메뉴의 기준점을 부모요소로 지정하기 위한 처리*/
+.menu-item{
+    position:relative;
+}
+
+/**서브메뉴 화면에서 숨기기*/
+.sub{display: none;}
