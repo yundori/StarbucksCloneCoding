@@ -1,0 +1,23 @@
+.notice_set{
+    height: 62px;
+    position: relative;
+    width: 100%;
+    background: url(../img/line_notice_bg.jpg);
+    left:50%; margin-left:-640px; width:1280px;
+}
+
+.item{
+    float: left;
+}
+
+/**좌측 공지사항 표시
+*******************************/
+.notice_left .notice_word{
+    background: url(../img/notice_ttl.png);
+    height: 17px;
+    width: 65px;
+    left: 0;
+    top: 10px;
+    overflow: hidden;
+    position: absolute;
+}

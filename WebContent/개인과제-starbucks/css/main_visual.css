@@ -1,4 +1,5 @@
-/**main_visual 전체 배경 설정*/
+/**main_visual 전체 배경 설정
+*******************************/
 .main_visual{
     height: 646px;
     background-image: url(../img/2020_xams2_bg.jpg);
@@ -6,7 +7,8 @@
     background-position: center;
     background-size: cover;
 }
-/**양옆 사이즈 조절 위한 박스*/
+/**양옆 사이즈 조절 위한 박스
+*******************************/
 .main_visual_inner{
     box-sizing: border-box;
     position:relative;
@@ -16,12 +18,14 @@
     padding-top:70px;
 }
 
-/**시간차를 두고 나타나는 효과*/
+/**시간차를 두고 나타나는 효과
+*******************************/
 .slogan_set, .coffee_set{
     visibility: hidden;
 }
 
-/**커피 메뉴 위치 지정*/
+/**커피 메뉴 이미지 위치 지정
+*******************************/
 .coffee_set{
     /*position: relative;*/
     width: 1080px;
@@ -30,15 +34,41 @@
 
 }
 
-.set_06 { position: absolute; bottom:17%; left:23%; width:21%; max-width:224px;}
-.set_03 {position: absolute; bottom:13%; left:32.1%; width:22%; max-width:232px;}
+.set_06 { position: absolute; bottom:17%; left:23%; width:21%; max-width:224px; z-index: 2;}
+.set_03 {position: absolute; bottom:13%; left:32.1%; width:22%; max-width:232px; z-index: 3;}
 .set_01 {position: absolute; bottom:22%; left:43%; width:26%; max-width:277px;}
 .set_04 {position: absolute; bottom:16%; left:55%; width:24%; max-width:249px;}
 .set_02 {position: absolute; bottom:29%; left:64%; width:22%; max-width:233px;}
 .set_07 {position: absolute; bottom:12%; left:73.8%; width:25%; max-width:252px;}
 .set_05 {position: absolute; bottom:17%; left:81.3%; width:25%; max-width:268px;}
 
-/**자세히 보기 버튼*/
+/**커피 메뉴 글자
+*******************************/
+.set_common:after{
+    content: "";
+    position: absolute;
+    height: 33%;
+    max-height: 78px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.set_06:after{content:""; position:absolute; top:64%; left:-81%; width:79%; max-width:177px; background-image:url(../img/2020_xmas2_popconrn_tit.png); }
+.set_03:after{content:""; position:absolute; top:104%; left:-3%; width:75%; max-width:173px; background-image:url(../img/2020_xmas2_relaxer_tit.png); }
+.set_01:after{content:"";position:absolute; top:-35%; left:13%; width:49%; max-width:135px; background-image:url(../img/2020_xmas2_dolce_tit.png);}
+.set_04:after{content:""; position:absolute; top:92%; left:5%; width:58%; max-width:144px; background-image:url(../img/2020_xmas2_dark_tit.png);}
+.set_02:after{content:""; position:absolute; top:-28%; left:-5%; width:62%; max-width:144px; background-image:url(../img/2020_xmas2_dark_blended_tit.png);}
+.set_07:after{content:""; position:absolute; top:100%; left:3%; width:58%; max-width:146px; background-image:url(../img/2020_xmas2_nut_tit.png);}
+.set_05:after{content:""; position:absolute; top:-27%; left:2%; width:73%; max-width:194px; background-image:url(../img/2020_xmas2_panna_tit.png);}
+
+
+
+/**슬로건 세트 크기 지정
+*******************************/
+.slogan_set {width:34%; max-width:363px;}
+
+/**자세히 보기 버튼
+*******************************/
 .btn_slogan a{
     display: block;
     width: 100%;
@@ -65,4 +95,3 @@
     margin-top:40px;
 
 }
-.slogan_set {width:34%; max-width:363px;}
