@@ -1,18 +1,20 @@
-.notice_set{
+.notice_set {
     height: 62px;
     position: relative;
     width: 100%;
     background: url(../img/line_notice_bg.jpg);
-    left:50%; margin-left:-640px; width:1280px;
+    left: 50%;
+    margin-left: -640px;
+    width: 1280px;
 }
 
-.item{
+.item {
     float: left;
 }
 
 /**좌측 공지사항 표시
 *******************************/
-.notice_left .notice_word{
+.notice_left .notice_word {
     background: url(../img/notice_ttl.png);
     height: 17px;
     width: 65px;
@@ -20,4 +22,54 @@
     top: 10px;
     overflow: hidden;
     position: absolute;
+}
+
+.item {
+    width: 50px;
+}
+
+.notice_right {
+    position: absolute;
+    left: 60%;
+}
+
+/**프로모션 더보기
+*******************************/
+
+
+/******* 슬라이드 내용영역 꾸미기 *******/
+.slider_set {
+
+}
+/**new_rewards
+*******************************/
+.new_rewards{
+    background-color: #1e3932;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.new_rewards_inner{
+    max-width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+/**new_rewards 로고부분
+*******************************/
+.new_rewards_logo{
+    float: left;
+    width: 16.3%;
+    text-align: center;
+}
+
+.new_rewards_logo img{
+    width: 176px;
+}
+/**new_rewards 우측부분(글)
+*******************************/
+.new_rewards_contents{
+    box-sizing: border-box;
+    float: left;
+    color: #fff;
+    padding-right: 30px;
 }

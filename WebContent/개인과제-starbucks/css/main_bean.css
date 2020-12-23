@@ -1,0 +1,58 @@
+.main_bean{
+    height: 573px;
+    background-image: url(../img/2020_xmas_bean_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f8ccd7;
+    display : block;
+}
+
+.main_bean_inner{
+    position: relative;
+    max-width: 1080px;
+    height: 573px;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+/**이미지 위치조정
+*******************************/
+.bean_img{
+    float: left;
+}
+
+/**contents 위치조정
+*******************************/
+.bean_contents{
+    top:30%;
+    right: 12%;
+    position: absolute;
+}
+
+/**자세히 보기 버튼
+*******************************/
+.main_bean_btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: background-color .5s;
+}
+
+.main_bean_btn a:hover{
+    background-color: #006e3f;
+}
+
+.main_bean_btn{
+    box-sizing: border-box;
+    width: 125px;
+    height: 38px;
+    line-height: 34px;
+    text-align:center;
+    font-size:15px;
+    border:2px solid  #fff;
+    border-radius:3px;
+    z-index:5;
+    position: absolute;
+    margin-top: 10%;
+}

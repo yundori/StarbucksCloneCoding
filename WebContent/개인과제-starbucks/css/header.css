@@ -24,9 +24,7 @@ a:hover{
     text-decoration: underline;
 }
 
-hr {
-    display: none;
-}
+
 /**전체 헤더 영역*/
 
 .header{
