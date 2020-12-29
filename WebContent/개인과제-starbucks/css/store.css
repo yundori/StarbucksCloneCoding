@@ -1,0 +1,83 @@
+.store{
+    background-image: url(../img/store_bg.jpg);
+}
+
+.store_inner{
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    font-size: 0;
+    height: 400px;
+    overflow: hidden;
+}
+
+/**이미지들 위치 조정*/
+.s_box_2{
+    position: absolute;
+    left: 10%;
+    z-index: 1;
+}
+
+.s_box_1{
+    position: absolute;
+    top: 40%;
+    left : 28%;
+    z-index: 2;
+}
+
+.s_box_3{
+    position: absolute;
+    top: -15%;
+    left: 40%;
+    width: 343px;
+    height: 142px;
+}
+
+.s_box_txt01{
+    position: absolute;
+    top: 29%;
+    left: 59%;
+}
+
+.s_box_txt02{
+    position: absolute;
+    left: 59%;
+    top: 50%;
+}
+
+.s_box_4{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+/**자세히 보기 버튼
+*******************************/
+.store_btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    transition: background-color .5s;
+}
+
+.store_btn a:hover{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.store_btn{
+    box-sizing: border-box;
+    width: 125px;
+    height: 38px;
+    line-height: 34px;
+    text-align:center;
+    font-size:15px;
+    border:2px solid  #000;
+    border-radius:3px;
+    z-index:9;
+    position: absolute;
+    left: 59%;
+    top: 70%;
+}

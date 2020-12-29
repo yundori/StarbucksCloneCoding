@@ -1,0 +1,80 @@
+.section_mag {  position: relative; }
+
+/* 짝수 번째 섹션에 대한 배경이미지 공통 속성 */
+.section_mag {
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* 짝수 번째의 각 요소에 대한 배경이미지 지정 */
+.section_mag {
+    background-color: #fff;
+}
+
+/* 매거진 박스 설정*/
+.section_inner {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    font-size: 0;
+
+}
+
+/* 매거진 라인 설정*/
+.section_inner:after {
+    content: "";
+    position: absolute;
+    left: 44%;
+    top: 136px;
+    width: 1px;
+    height: 64%;
+    background-color: #cccccb;
+}
+
+.section_inner:before {
+    content: "";
+    position: absolute;
+    top: 61.8%;
+    left: 9.5%;
+    width: 95.3%;
+    height: 1px;
+    background-color: #cccccb;
+}
+
+ /* 각 섹션별 내용을 가정한 박스 */
+        .m_box-right {
+            /* 왼쪽 상단을 부모 요소 중심에 맞춤 */
+            position: relative;
+            width: 45.6%;
+            margin-left: 6%;
+            padding-right: 3.5%;
+
+        }
+
+        .m_box-left{
+            position: relative;
+            width: 38.5%;
+            padding-left: 3.5%;
+
+
+        }
+
+        /* 첫 번째 박스는 자신의 사이즈+50(여백)만큼 왼쪽으로 이동 */
+        /*.m_box-left { margin-left: -50px; }*/
+         /* 두 번째 박스는 50(여백)만큼 오른쪽으로 이동 */
+        /*.m_box-right { margin-left: 50px; }*/
+
+        .m_box-right img{
+            position : relative;
+            margin-top: 32%;
+        }
+
+        .section_inner div{
+            display: inline-block;
+            vertical-align: top;
+        }

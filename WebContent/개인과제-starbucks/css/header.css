@@ -12,6 +12,7 @@
 
 body {
     width: auto;
+    font-family: "nbg", "맑은고딕", "HelveticaNeue", "DroidSans", "Sans-serif", "Helvetica";
     font-size: 1em;
     line-height: 1;
 }
@@ -29,15 +30,22 @@ a:hover{
 
 .header{
     background-color: #f6f5ef;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 120px;
 }
 .parent{
     width: 1100px;
     margin : 0 auto;
+    position: relative;
 }
 /**로고 영역*/
 .child .logo{
     height: 75px;
     width: 75px;
+    position: fixed;
+    top: 20px;
     z-index: 12px;
 }
 
@@ -56,25 +64,31 @@ a:hover{
     top: 15px;
     right: 10%;
     width: 464px;
+    font-size: 13px;
 }
 
 .upper_link{
     display: block;
     float: left;
-    margin-left: 10px;
+
 
 }
 /**우측 하단 메뉴 영역*/
-.down_menu{
-    height: 66px;
-    width: 1100px;
+
+.child_down{
     position: absolute;
+    left: 0;
     top: 54px;
-    left: 50%;
-    /**left 아직 잘 모르겠음. 나중에 수정 필요*/
+    width: 100%;
+    height: 66px;
     display: block;
     text-decoration: none;
+    z-index: 17;
 
+}
+
+.child_down ul{
+    float:right;
 }
 /**float 처리*/
 .clearfix:after{
@@ -106,6 +120,15 @@ a:hover{
 /**서브메뉴의 기준점을 부모요소로 지정하기 위한 처리*/
 .menu-item{
     position:relative;
+}
+
+/**다운메뉴 블럭 처리*/
+h2{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 /**서브메뉴 화면에서 숨기기*/
