@@ -126,11 +126,50 @@
     right: 22%;
 }
 
-/******* 슬라이드 내용영역 꾸미기 *******/
-.slider_set {
-    display: none;
+/******* 슬라이드 내용영역  *******/
+.swiper-container {
+    display: hidden;
+    /**여기 고쳐야 됨 **************
+    *none으로 하니 duplicate 에러 발생****/
+    background-color: #f6f5ef;
 }
 
+.swiper-slide{
+    width: 30%;
+    margin: 30px 10px 0 10px;
+}
+
+/**자세히보기 버튼*/
+/**자세히 보기 버튼
+*******************************/
+.btn_more a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    transition: background-color .5s;
+}
+
+.btn_more a:hover{
+   background-color: #000;
+    color: #fff;
+}
+
+.btn_more{
+    box-sizing: border-box;
+    width: 125px;
+    height: 38px;
+    line-height: 34px;
+    text-align:center;
+    font-size:15px;
+    border:2px solid  #000;
+    border-radius:3px;
+    z-index:5;
+    margin-top: 0px;
+    position: fixed;
+    bottom: 2%;
+    margin-left: 350px;
+}
 /**new_rewards
 *******************************/
 .new_rewards {
