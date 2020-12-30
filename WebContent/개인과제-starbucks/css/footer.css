@@ -1,0 +1,143 @@
+/** footer 배경
+*******************************/
+
+.footer {
+    background: #2C2A29;
+    position: relative;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+/** footer inner 내용 크기,배경설정
+*******************************/
+.footer_inner {
+    width: 1100px;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    padding-top: 30px;
+    background: url(../img/footer_logo.png) right 30px no-repeat;
+}
+
+/** footer ul li 설정
+*******************************/
+.footer_inner ul {
+    width: 220px;
+    float: left;
+
+}
+
+.footer_inner ul li a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+/** footer ul li 제목 설정
+*******************************/
+.footer_inner .footer_menu a {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+/** awards줄 위치 설정
+*******************************/
+.footer_awards {
+    height: 80px;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.footer_inner_sec {
+    height: 64px;
+    top: 8px;
+    width: 1134px;
+    left: 13%;
+    position: absolute;
+}
+
+.awards_line {
+    display: inline-block;
+}
+
+.awards_line li {
+    float: left;
+}
+/** copyright 전체 설정
+*******************************/
+.footer_copyright{
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    left: 20%;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+/** copyright copy 설정
+*******************************/
+.footer_copyright .copy_first{
+    border-right: 1px solid #393939;
+    color: #ccc;
+    font-size: 12px;
+    padding: 0 10px;
+}
+/** copyright copy_special 설정
+*******************************/
+.footer_copyright .copy_special{
+    color: #00b050;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 0 10px;
+    border-right: 1px solid #393939;
+}
+
+/** 버튼
+*******************************/
+.copy_btn a{
+
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: background-color .5s;
+}
+
+.copy_btn a:hover{
+   background-color: #fff;
+    color: #fff;
+}
+
+.copy_btn{
+    box-sizing: border-box;
+    width: 118px;
+    height: 34px;
+    line-height: 33px;
+    text-align:center;
+    font-size:12px;
+    color: #fff;
+    border:2px solid  #fff;
+    border-radius:3px;
+    z-index:5;
+    margin-left: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    padding: 0 10px;
+}
+/** copyright 정보
+*******************************/
+.copy_info{
+    padding-top: 25px;
+    padding-bottom : 5px;
+    text-align: center;
+}
+
+.copy_info li{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.company_rights{
+    display: inline-block;
+    line-height: 40px;
+}

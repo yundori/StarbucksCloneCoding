@@ -1,9 +1,11 @@
 /**사이트 전체 여백, 폰트 지정*/
-
+@font-face{
+    font-family: "NanumBarunGothic" "맑은고딕", "HelveticaNeue", "DroidSans", "Sans-serif", "Helvetica";
+}
 * {
     margin: 0;
     padding: 0;
-    font-family: "nbg", "맑은고딕", "HelveticaNeue", "DroidSans", "Sans-serif", "Helvetica";
+    font-family: "NanumBarunGothic", "맑은고딕", "HelveticaNeue", "DroidSans", "Sans-serif", "Helvetica";
     font-size: 13px;
     background: transparent;
     vertical-align: baseline;
@@ -37,6 +39,7 @@ a:hover{
 }
 .parent{
     width: 1100px;
+    height: 120px;
     margin : 0 auto;
     position: relative;
 }
@@ -58,38 +61,209 @@ a:hover{
     text-indent: -100000px;
 }
 /**우측 상단 메뉴 영역*/
-.upper_menu{
+
+.top_nav{
     position: absolute;
     height: 20px;
     top: 15px;
     right: 10%;
     width: 464px;
+    background: url(../img/sdown_util_sep.png) no-repeat;
+
+}
+.upper_menu{
+
     font-size: 13px;
 }
 
-.upper_link{
-    display: block;
+.upper_menu a{
+    display: inline-block;
     float: left;
-
-
 }
-/**우측 하단 메뉴 영역*/
+/*상단 링크 크기 상세 조정*/
+.upper_link1{
+    width: 76px;
+    position: relative;
+    left: 20px;
+    top: 3px;
+}
+.upper_link2{
+    width: 107px;
+    position: relative;
+    left: 15px;
+    top: 3px;
+}
+.upper_link3{
+    width: 181px;
+    position: relative;
+    left: 20px;
+    top: 3px;
+}
+.upper_link4{
+    width: 97px;
+    position: relative;
+    left: 20px;
+    top: 3px;
+}
 
+/*통합검색*/
+.search{
+    height: 32px;
+    right: -40px;
+    top: -9px;
+    width: 32px;
+    background: #fff;
+    border : 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+}
+.search a{
+    height: 34px;
+    width: 34px;
+    display: block;
+    right: 0;
+    top: 0;
+}
+.search img{
+    right: 7px;
+    top: 6px;
+    position: absolute;
+}
+
+/*통합검색 열리기*/
+.search input{
+    display: inline-block;
+}
+#totalSearch{
+    display: none;
+    background: none;
+    border: none;
+    color: #777;
+    font-size: 12px;
+    height: 22px;
+    width: 123px;
+    left: 0;
+    top: 5px;
+    padding: 0 10px;
+    position: absolute;
+}
+
+/**우측 하단 메뉴 영역*/
 .child_down{
     position: absolute;
     left: 0;
     top: 54px;
     width: 100%;
     height: 66px;
-    display: block;
     text-decoration: none;
     z-index: 17;
 
 }
-
 .child_down ul{
     float:right;
+    position: fixed;
+    left: 38%;
+    width: 1100px;
 }
+/**li 각각 크기 설정*/
+.menu-item1{
+    width: 89px;
+    float: left;
+}
+.menu-item2{
+    width: 73px;
+    float: left;
+}
+.menu-item3{
+    width: 79px;
+    float: left;
+}
+.menu-item4{
+    width: 153px;
+    float: left;
+}
+.menu-item5{
+    width: 225px;
+    float: left;
+}
+.menu-item6{
+    width: 131px;
+    float: left;
+}
+/**li 속 h2 설정*/
+.menu-item h2{
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.down_menu h2 a{
+    height: 56px;
+    width: 100%;
+    line-height: 20px;
+    padding-top: 10px;
+    color: #333;
+    display: block;
+    font-size: 13px;
+    font-family: 'Avenir', 'Arial', 'georgia';
+    font-style: normal;
+    text-align: center;
+}
+/**li 속 h2 a hover 설정*/
+.down_menu h2 a:hover{
+    background: #2C2A29;
+    color: #669900;
+}
+/**숨겨진 down menu설정*/
+.down_wrap{
+    display: none;
+    left: 0;
+    top: 66px;
+    background-color: #2C2A29;
+    position: absolute;
+    width: 100%;
+}
+
+.down_detail{
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.down_detail_inner{
+    float: left;
+    left: 20px;
+    position: relative;
+    width: 100%;
+}
+.down_detail_inner .sub{
+    float: left;
+    width: 220px;
+}
+.sub.down_title{
+    padding-bottom: 12px;
+}
+.sub li{
+    float: left;
+    width: 100%;
+    padding: 3px 0;
+}
+/**숨겨진 메뉴 아래쪽 텍스트*/
+.down_txt{
+    padding : 15px 0 40px 0;
+    background: url(../img/gnb_sub_txbg.jpg);
+    display: inline-block;
+    width: 100%;
+}
+.down_txt_inner{
+    width: 950px;
+    margin: 0 auto;
+    line-height: 18px;
+    float: left;
+}
+
 /**float 처리*/
 .clearfix:after{
     content: '';
@@ -97,39 +271,3 @@ a:hover{
     float: none;
     clear : both;
 }
-
-.pull-left{
-    float: left;
-}
-/**마우스가 올라간 링크에 대해 색 변경*/
-.down_menu .down_link:hover{ background:#2C2A29; color:#669900;}
-
-.down_link{
-    display: inline-block;
-    float: left;
-    margin-left: 10px;
-    text-align: right;
-
-}
-/**서브메뉴 펼쳐져도 떠 있기 위한 position 처리*/
-.sub{
-    position: absolute;
-    z-index: 1000;
-}
-
-/**서브메뉴의 기준점을 부모요소로 지정하기 위한 처리*/
-.menu-item{
-    position:relative;
-}
-
-/**다운메뉴 블럭 처리*/
-h2{
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-}
-
-/**서브메뉴 화면에서 숨기기*/
-.sub{display: none;}

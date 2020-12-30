@@ -96,3 +96,14 @@
     margin-top:40px;
 
 }
+
+/**flying 레이어
+*******************************/
+
+.flying{
+    position: fixed;
+    top: 138px;
+    right: 6%;
+    width: 130px;
+    z-index: 100;
+}

@@ -1,4 +1,6 @@
-.section_mag {  position: relative; }
+.section_mag {
+    position: relative;
+}
 
 /* 짝수 번째 섹션에 대한 배경이미지 공통 속성 */
 .section_mag {
@@ -46,35 +48,61 @@
     background-color: #cccccb;
 }
 
- /* 각 섹션별 내용을 가정한 박스 */
-        .m_box-right {
-            /* 왼쪽 상단을 부모 요소 중심에 맞춤 */
-            position: relative;
-            width: 45.6%;
-            margin-left: 6%;
-            padding-right: 3.5%;
+/* 각 섹션별 내용을 가정한 박스 */
+.m_box-right {
+    /* 왼쪽 상단을 부모 요소 중심에 맞춤 */
+    position: relative;
+    width: 45.6%;
+    margin-left: 6%;
+    padding-right: 3.5%;
 
-        }
+}
 
-        .m_box-left{
-            position: relative;
-            width: 38.5%;
-            padding-left: 3.5%;
+.m_box-left {
+    position: relative;
+    width: 38.5%;
+    padding-left: 3.5%;
 
 
-        }
+}
 
-        /* 첫 번째 박스는 자신의 사이즈+50(여백)만큼 왼쪽으로 이동 */
-        /*.m_box-left { margin-left: -50px; }*/
-         /* 두 번째 박스는 50(여백)만큼 오른쪽으로 이동 */
-        /*.m_box-right { margin-left: 50px; }*/
+/* 첫 번째 박스는 자신의 사이즈+50(여백)만큼 왼쪽으로 이동 */
+/*.m_box-left { margin-left: -50px; }*/
+/* 두 번째 박스는 50(여백)만큼 오른쪽으로 이동 */
+/*.m_box-right { margin-left: 50px; }*/
 
-        .m_box-right img{
-            position : relative;
-            margin-top: 32%;
-        }
+.m_box-right img {
+    position: relative;
+    margin-top: 32%;
+}
 
-        .section_inner div{
-            display: inline-block;
-            vertical-align: top;
-        }
+.section_inner div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Explore our story 버튼 */
+.m_btn{
+    position: absolute;
+    width: 287px;
+    height: 17px;
+    top: 65%;
+    margin-left: 48%;
+    padding: 8px 10px;
+    transition: background-color .8s;
+}
+.m_btn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/btn_magazine_pc.png);
+    background-repeat: no-repeat;
+}
+
+.m_btn:hover{
+    background-color: #976d3f;
+}
+
+.m_btn:hover a{
+    background-position: 0 -17px;
+}
