@@ -447,12 +447,12 @@
                     <img src="img/banner_04.jpg">
                     <a href="#" class="btn_more">자세히 보기</a>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
         <!--rewards 영역-->
         <div class="new_rewards clearfix">
@@ -674,6 +674,7 @@
             slidesPerView: '2',
             centeredSlides: true,
             spaceBetween: 50,
+            // watchSlidesVisibility: true,
             loop: true,
             autoplay: {
                 delay: 2500,
@@ -688,9 +689,9 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-        $('.swiper-container').hover(function(){
+        $('.swiper-container').hover(function() {
             swiper.autoplay.stop();
-        }, function(){
+        }, function() {
             swiper.autoplay.start();
         });
     });
@@ -723,7 +724,6 @@
         $(".slogan_set .slogan").animateCSS('fadeIn', { duration: 2000, delay: 3500 });
         $(".slogan_set .btn_slogan").animateCSS('fadeIn', { duration: 2000, delay: 3900 });
     });
-
     </script>
 </body>
 
